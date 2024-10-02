@@ -8,7 +8,7 @@ public class Main implements IAppLogic {
 
     public static void main(String[] args) {
         Main main = new Main();
-        Engine gameEng = new Engine("Game", new Window.WindowOptions(), main);
+        Engine gameEng = new Engine("chapter-02", new Window.WindowOptions(), main);
         gameEng.start();
     }
 

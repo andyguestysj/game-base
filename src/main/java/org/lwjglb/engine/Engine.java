@@ -31,7 +31,7 @@ public class Engine {
     }
 
     private void resize() {
-        // Nothing to be done yet
+        scene.resize(window.getWidth(), window.getHeight());
     }
 
     private void run() {

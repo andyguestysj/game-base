@@ -64,8 +64,11 @@ public class Window {
 
         glfwMakeContextCurrent(windowHandle);
 
-        glfwSwapInterval(1);
-        
+        if (opts.fps > 0) {
+            glfwSwapInterval(0);
+        } else {
+            glfwSwapInterval(1);
+        }
 
         glfwShowWindow(windowHandle);
 
@@ -131,8 +134,9 @@ public class Window {
     }
 
     public static class WindowOptions {
-        public boolean compatibleProfile;        
-        public int height;        
+        public boolean compatibleProfile;
+        public int fps;
+        public int height;
         public int width;
     }
 }

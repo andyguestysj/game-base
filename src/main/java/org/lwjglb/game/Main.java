@@ -19,7 +19,23 @@ public class Main implements IAppLogic {
 
     @Override
     public void init(Window window, Scene scene, Render render) {
-        // Nothing to be done yet
+        float[] positions = new float[]{
+            -0.5f, 0.5f, 0.0f,
+            -0.5f, -0.5f, 0.0f,
+            0.5f, -0.5f, 0.0f,
+            0.5f, 0.5f, 0.0f,
+    };
+    float[] colors = new float[]{
+            0.5f, 0.0f, 0.0f,
+            0.0f, 0.5f, 0.0f,
+            0.0f, 0.0f, 0.5f,
+            0.0f, 0.5f, 0.5f,
+    };
+    int[] indices = new int[]{
+            0, 1, 3, 3, 1, 2,
+    };
+    Mesh mesh = new Mesh(positions, colors, indices);
+    scene.addMesh("quad", mesh);
     }
 
     @Override

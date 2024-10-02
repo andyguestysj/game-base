@@ -18,7 +18,7 @@ public class Engine {
         });
         this.appLogic = appLogic;
         render = new Render();
-        scene = new Scene();
+        scene = new Scene(window.getWidth(), window.getHeight());
         appLogic.init(window, scene, render);
         running = true;
     }

@@ -1,7 +1,7 @@
 package org.lwjglb.game;
 
 import org.lwjglb.engine.*;
-import org.lwjglb.engine.graph.Render;
+import org.lwjglb.engine.graph.*;
 import org.lwjglb.engine.scene.Scene;
 
 public class Main implements IAppLogic {

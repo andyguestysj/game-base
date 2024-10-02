@@ -1,6 +1,6 @@
 package org.lwjglb.engine;
 
-import org.lwjglb.engine.graph.Render;
+import org.lwjglb.engine.graph.*;
 import org.lwjglb.engine.scene.Scene;
 
 public interface IAppLogic {
